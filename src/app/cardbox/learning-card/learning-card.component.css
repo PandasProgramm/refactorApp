@@ -1,0 +1,31 @@
+.card{
+  background: linear-gradient(#436EEE,#87CEFA);
+  width: 400px;
+  height: 300px;
+  font-size: 24px;
+  font-family: Arial,sans-serif;
+  text-shadow: none;
+  color: black;
+}
+.questionPart{
+  height: 50px;
+  font-weight: bolder;
+  position: absolute;
+}
+.bodyPart{
+  margin-top: 63px;
+  padding-top: 10px;
+  height: 200px;
+  font-size: 16px;
+  position:absolute;
+}
+.bar{
+  margin-top: 260px;
+  height:30px;
+  position: absolute;
+}
+.btnShowAnswer{
+  margin-top: 230px;
+  width: 100%;
+  position: absolute;
+}

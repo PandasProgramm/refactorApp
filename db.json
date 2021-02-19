@@ -1,0 +1,1097 @@
+{
+  "chapters": [
+    {
+      "id": "business-environment",
+      "cards": [
+        {
+          "id": "0",
+          "key": "business-environment",
+          "question": "Is this a question?[Business-environments0]",
+          "answer": "Yes it is",
+          "correctAnswerCount": 0
+        },
+        {
+          "id": "1",
+          "key": "business-environment",
+          "question": "Is this a question?[Business-environments1]",
+          "answer": "Yes it is",
+          "correctAnswerCount": 3
+        },
+        {
+          "id": "2",
+          "key": "business-environment",
+          "question": "Is this a question?[Business-environments2]",
+          "answer": "Yes it is",
+          "correctAnswerCount": 6
+        },
+        {
+          "id": "3",
+          "key": "business-environment",
+          "question": "Is this a question?[Business-environments3]",
+          "answer": "Yes it is",
+          "correctAnswerCount": 9
+        },
+        {
+          "id": "4",
+          "key": "business-environment",
+          "question": "Is this a question?[Business-environments4]",
+          "answer": "Yes it is",
+          "correctAnswerCount": 12
+        },
+        {
+          "id": "5",
+          "key": "business-environment",
+          "question": "Is this a question?[Business-environments5]",
+          "answer": "Yes it is",
+          "correctAnswerCount": 0
+        }
+      ],
+      "summaries": [],
+      "quiz": []
+    },
+    {
+      "id": "Business-Process",
+      "cards": [
+        {
+          "id": "6",
+          "key": "Business-Process",
+          "question": "Is this a question?[Business-Process]",
+          "answer": "Yes it is",
+          "correctAnswerCount": 0
+        },
+        {
+          "id": "7",
+          "key": "Business-Process",
+          "question": "Is this a question?[Business-Process]",
+          "answer": "Yes it is",
+          "correctAnswerCount": 3
+        },
+        {
+          "id": "8",
+          "key": "Business-Process",
+          "question": "Is this a question?[Business-Process]",
+          "answer": "Yes it is",
+          "correctAnswerCount": 6
+        },
+        {
+          "id": "9",
+          "key": "Business-Process",
+          "question": "Is this a question?[Business-Process]",
+          "answer": "Yes it is",
+          "correctAnswerCount": 9
+        },
+        {
+          "id": "10",
+          "key": "Business-Process",
+          "question": "Is this a question?[Business-Process]",
+          "answer": "Yes it is",
+          "correctAnswerCount": 12
+        },
+        {
+          "id": "11",
+          "key": "Business-Process",
+          "question": "Is this a question?[Business-Process]",
+          "answer": "Yes it is",
+          "correctAnswerCount": 0
+        }
+      ],
+      "summaries": [],
+      "quiz": []
+    },
+    {
+      "id": "market-and-customer",
+      "cards": [
+        {
+          "id": "12",
+          "key": "market-and-customer",
+          "question": "Is this a question?[market/customer]",
+          "answer": "Yes it is",
+          "correctAnswerCount": 0
+        },
+        {
+          "id": "13",
+          "key": "market-and-customer",
+          "question": "Is this a question?[market/customer]",
+          "answer": "Yes it is",
+          "correctAnswerCount": 3
+        },
+        {
+          "id": "14",
+          "key": "market-and-customer",
+          "question": "Is this a question?[market/customer]",
+          "answer": "Yes it is",
+          "correctAnswerCount": 6
+        },
+        {
+          "id": "15",
+          "key": "market-and-customer",
+          "question": "Is this a question?[market/customer]",
+          "answer": "Yes it is",
+          "correctAnswerCount": 9
+        },
+        {
+          "id": "16",
+          "key": "market-and-customer",
+          "question": "Is this a question?[market/customer]",
+          "answer": "Yes it is",
+          "correctAnswerCount": 12
+        },
+        {
+          "id": "17",
+          "key": "market-and-customer",
+          "question": "Is this a question?[market/customer]",
+          "answer": "Yes it is",
+          "correctAnswerCount": 0
+        }
+      ],
+      "summaries": [],
+      "quiz": []
+    },
+    {
+      "id": "controlling",
+      "cards": [
+        {
+          "id": "18",
+          "key": "controlling",
+          "question": "Is this a question?[controlling]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "0"
+        },
+        {
+          "id": "19",
+          "key": "controlling",
+          "question": "Is this a question?[controlling]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "3"
+        },
+        {
+          "id": "20",
+          "key": "controlling",
+          "question": "Is this a question?[controlling]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "6"
+        },
+        {
+          "id": "21",
+          "key": "controlling",
+          "question": "Is this a question?[controlling]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "9"
+        },
+        {
+          "id": "22",
+          "key": "controlling",
+          "question": "Is this a question?[controlling]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "12"
+        }
+      ],
+      "summaries": [],
+      "quiz": []
+    },
+    {
+      "id": "system-administration",
+      "cards": [
+        {
+          "id": "23",
+          "key": "system-administration",
+          "question": "Is this a question?[system administration]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "0"
+        },
+        {
+          "id": "24",
+          "key": "system-administration",
+          "question": "Is this a question?[system administration]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "3"
+        },
+        {
+          "id": "25",
+          "key": "system-administration",
+          "question": "Is this a question?[system administration]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "6"
+        },
+        {
+          "id": "26",
+          "key": "system-administration",
+          "question": "Is this a question?[system administration]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "9"
+        },
+        {
+          "id": "27",
+          "key": "system-administration",
+          "question": "Is this a question?[system administration]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "12"
+        }
+      ],
+      "summaries": [],
+      "quiz": []
+    },
+    {
+      "id": "simplified-systems",
+      "cards": [
+        {
+          "id": "28",
+          "key": "simplified-systems",
+          "question": "Is this a question?[simplified-systems]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "0"
+        },
+        {
+          "id": "29",
+          "key": "simplified-systems",
+          "question": "Is this a question?[simplified-systems]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "3"
+        },
+        {
+          "id": "30",
+          "key": "simplified-systems",
+          "question": "Is this a question?[simplified-systems]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "6"
+        },
+        {
+          "id": "31",
+          "key": "simplified-systems",
+          "question": "Is this a question?[simplified-systems]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "9"
+        },
+        {
+          "id": "32",
+          "key": "simplified-systems",
+          "question": "Is this a question?[simplified-systems]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "12"
+        }
+      ],
+      "summaries": [],
+      "quiz": []
+    },
+    {
+      "id": "public-network",
+      "cards": [],
+      "summaries": [],
+      "quiz": []
+    },
+    {
+      "id": "cross-linked-systems",
+      "cards": [
+        {
+          "id": "33",
+          "key": "cross-linked-systems",
+          "question": "Is this a question?[cross-linked-systems]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "0"
+        },
+        {
+          "id": "34",
+          "key": "cross-linked-systems",
+          "question": "Is this a question?[cross-linked-systems]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "3"
+        },
+        {
+          "id": "35",
+          "key": "cross-linked-systems",
+          "question": "Is this a question?[cross-linked-systems]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "6"
+        },
+        {
+          "id": "36",
+          "key": "cross-linked-systems",
+          "question": "Is this a question?[cross-linked-systems]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "9"
+        },
+        {
+          "id": "37",
+          "key": "cross-linked-systems",
+          "question": "Is this a question?[cross-linked-systems]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "12"
+        }
+      ],
+      "summaries": [],
+      "quiz": []
+    },
+    {
+      "id": "network-engineering",
+      "cards": [
+        {
+          "id": "38",
+          "key": "network-engineering",
+          "question": "Is this a question?[cross linked systems]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "12"
+        },
+        {
+          "id": "39",
+          "key": "network-engineering",
+          "question": "Is this a question?[cross linked systems]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "12"
+        },
+        {
+          "id": "40",
+          "key": "network-engineering",
+          "question": "Is this a question?[cross linked systems]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "12"
+        },
+        {
+          "id": "41",
+          "key": "network-engineering",
+          "question": "Is this a question?[cross linked systems]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "12"
+        },
+        {
+          "id": "42",
+          "key": "network-engineering",
+          "question": "Is this a question?[cross linked systems]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "12"
+        },
+        {
+          "id": "43",
+          "key": "network-engineering",
+          "question": "Is this a question?[cross linked systems]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "12"
+        }
+      ],
+      "summaries": [],
+      "quiz": []
+    },
+    {
+      "id": "server",
+      "cards": [
+        {
+          "id": "44",
+          "key": "server",
+          "question": "Is this a question?[cross linked systems]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "0"
+        },
+        {
+          "id": "45",
+          "key": "server",
+          "question": "Is this a question?[cross linked systems]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "3"
+        },
+        {
+          "id": "46",
+          "key": "server",
+          "question": "Is this a question?[cross linked systems]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "6"
+        },
+        {
+          "id": "47",
+          "key": "server",
+          "question": "Is this a question?[cross linked systems]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "9"
+        },
+        {
+          "id": "48",
+          "key": "server",
+          "question": "Is this a question?[cross linked systems]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "12"
+        },
+        {
+          "id": "49",
+          "key": "server",
+          "question": "Is this a question?[server]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "12"
+        }
+      ],
+      "summaries": [],
+      "quiz": []
+    },
+    {
+      "id": "it-safety",
+      "cards": [
+        {
+          "id": "50",
+          "key": "it-safety",
+          "question": "Is this a question?[it_safety]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "0"
+        },
+        {
+          "id": "51",
+          "key": "it-safety",
+          "question": "Is this a question?[it_safety]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "3"
+        },
+        {
+          "id": "52",
+          "key": "it-safety",
+          "question": "Is this a question?[it_safety]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "6"
+        },
+        {
+          "id": "53",
+          "key": "it-safety",
+          "question": "Is this a question?[it_safety]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "9"
+        },
+        {
+          "id": "54",
+          "key": "it_safety",
+          "question": "Is this a question?[it_safety]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "12"
+        }
+      ],
+      "summaries": [],
+      "quiz": []
+    },
+    {
+      "id": "console",
+      "cards": [
+        {
+          "id": "55",
+          "key": "console",
+          "question": "Is this a question?[it_safety]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "0"
+        },
+        {
+          "id": "56",
+          "key": "console",
+          "question": "Is this a question?[it_safety]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "3"
+        },
+        {
+          "id": "57",
+          "key": "console",
+          "question": "Is this a question?[console]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "6"
+        },
+        {
+          "id": "58",
+          "key": "console",
+          "question": "Is this a question?[console]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "9"
+        },
+        {
+          "id": "59",
+          "key": "console",
+          "question": "Is this a question?[console]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "12"
+        }
+      ],
+      "summaries": [],
+      "quiz": []
+    },
+    {
+      "id": "software-production",
+      "cards": [
+        {
+          "id": "60",
+          "key": "software-production",
+          "question": "Is this a question?[console]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "12"
+        },
+        {
+          "id": "61",
+          "key": "software-production",
+          "question": "Is this a question?[console]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "12"
+        },
+        {
+          "id": "62",
+          "key": "software-production",
+          "question": "Is this a question?[console]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "12"
+        },
+        {
+          "id": "63",
+          "key": "software-production",
+          "question": "Is this a question?[console]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "12"
+        },
+        {
+          "id": "64",
+          "key": "software-production",
+          "question": "Is this a question?[console]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "12"
+        }
+      ],
+      "summaries": [],
+      "quiz": []
+    },
+    {
+      "id": "analysis",
+      "cards": [
+        {
+          "id": "65",
+          "key": "analysis",
+          "question": "Is this a question?[analysis]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "12"
+        },
+        {
+          "id": "66",
+          "key": "analysis",
+          "question": "Is this a question?[analysis]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "12"
+        },
+        {
+          "id": "67",
+          "key": "analysis",
+          "question": "Is this a question?[analysis]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "12"
+        },
+        {
+          "id": "68",
+          "key": "analysis",
+          "question": "Is this a question?[analysis]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "12"
+        },
+        {
+          "id": "69",
+          "key": "analysis",
+          "question": "Is this a question?[analysis]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "12"
+        }
+      ],
+      "summaries": [],
+      "quiz": []
+    },
+    {
+      "id": "databases",
+      "cards": [
+        {
+          "id": "70",
+          "key": "databases",
+          "question": "Is this a question?[databases]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "0"
+        },
+        {
+          "id": "71",
+          "key": "databases",
+          "question": "Is this a question?[databases]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "3"
+        },
+        {
+          "id": "72",
+          "key": "databases",
+          "question": "Is this a question?[databases]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "6"
+        },
+        {
+          "id": "73",
+          "key": "databases",
+          "question": "Is this a question?[databases]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "9"
+        },
+        {
+          "id": "74",
+          "key": "databases",
+          "question": "Is this a question?[databases]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "12"
+        }
+      ],
+      "summaries": [],
+      "quiz": []
+    },
+    {
+      "id": "tools",
+      "cards": [
+        {
+          "id": "75",
+          "key": "tools",
+          "question": "tools",
+          "answer": "Yes it is",
+          "correctAnswerCount": "0"
+        },
+        {
+          "id": "76",
+          "key": "tools",
+          "question": "Is this a question?[tools]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "3"
+        },
+        {
+          "id": "77",
+          "key": "tools",
+          "question": "Is this a question?[tools]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "6"
+        },
+        {
+          "id": "78",
+          "key": "tools",
+          "question": "Is this a question?[tools]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "9"
+        },
+        {
+          "id": "79",
+          "key": "tools",
+          "question": "Is this a question?[tools]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "12"
+        }
+      ],
+      "summaries": [],
+      "quiz": []
+    },
+    {
+      "id": "java",
+      "cards": [
+        {
+          "id": "80",
+          "key": "java",
+          "question": "Is this a question?[java]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "0"
+        },
+        {
+          "id": "81",
+          "key": "java",
+          "question": "Is this a question?[java]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "3"
+        },
+        {
+          "id": "82",
+          "key": "java",
+          "question": "Is this a question?[java]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "6"
+        },
+        {
+          "id": "83",
+          "key": "java",
+          "question": "Is this a question?[java]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "9"
+        },
+        {
+          "id": "84",
+          "key": "java",
+          "question": "Is this a question?[java]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "12"
+        }
+      ],
+      "summaries": [],
+      "quiz": []
+    },
+    {
+      "id": "testing",
+      "cards": [
+        {
+          "id": "85",
+          "key": "testing",
+          "question": "Is this a question?[testing]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "0"
+        },
+        {
+          "id": "86",
+          "key": "testing",
+          "question": "Is this a question?[testing]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "3"
+        },
+        {
+          "id": "87",
+          "key": "testing",
+          "question": "Is this a question?[testing]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "6"
+        },
+        {
+          "id": "88",
+          "key": "testing",
+          "question": "Is this a question?[testing]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "9"
+        },
+        {
+          "id": "89",
+          "key": "testing",
+          "question": "Is this a question?[testing]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "12"
+        }
+      ],
+      "summaries": [],
+      "quiz": []
+    },
+    {
+      "id": "web",
+      "cards": [
+        {
+          "id": "90",
+          "key": "web",
+          "question": "Is this a question?[web]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "0"
+        },
+        {
+          "id": "91",
+          "key": "web",
+          "question": "Is this a question?[web]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "3"
+        },
+        {
+          "id": "92",
+          "key": "web",
+          "question": "Is this a question?[web]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "6"
+        },
+        {
+          "id": "93",
+          "key": "web",
+          "question": "Is this a question?[web]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "9"
+        },
+        {
+          "id": "94",
+          "key": "web",
+          "question": "Is this a question?[web]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "12"
+        }
+      ],
+      "summaries": [],
+      "quiz": []
+    },
+    {
+      "id": "routine-operations",
+      "cards": [
+        {
+          "id": "95",
+          "key": "routine-operations",
+          "question": "Is this a question?[routine operation]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "0"
+        },
+        {
+          "id": "96",
+          "key": "routine-operations",
+          "question": "Is this a question?[routine operation]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "3"
+        },
+        {
+          "id": "97",
+          "key": "routine-operations",
+          "question": "Is this a question?[routine operation]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "6"
+        },
+        {
+          "id": "98",
+          "key": "routine-operations",
+          "question": "Is this a question?[routine operation]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "9"
+        },
+        {
+          "id": "99",
+          "key": "routine-operations",
+          "question": "Is this a question?[routine operation]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "12"
+        }
+      ],
+      "summaries": [],
+      "quiz": []
+    },
+    {
+      "id": "software-documentation",
+      "cards": [
+        {
+          "id": "100",
+          "key": "software-documentation",
+          "question": "Is this a question?[routine operation]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "0"
+        },
+        {
+          "id": "101",
+          "key": "software-documentation",
+          "question": "Is this a question?[routine operation]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "3"
+        },
+        {
+          "id": "102",
+          "key": "software-documentation",
+          "question": "Is this a question?[routine operation]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "6"
+        },
+        {
+          "id": "103",
+          "key": "software-documentation",
+          "question": "Is this a question?[routine operation]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "9"
+        },
+        {
+          "id": "104",
+          "key": "software-documentation",
+          "question": "Is this a question?[routine operation]",
+          "answer": "Yes it is",
+          "correctAnswerCount": "12"
+        }
+      ],
+      "summaries": [],
+      "quiz": []
+    }
+  ],
+  "users": [
+    {
+      "id": "0",
+      "email": "adummy@email.de",
+      "password": "12345678",
+      "address": "address 11",
+      "city": "Dummytown",
+      "postCode": "12345"
+    },
+    {
+      "id": "1",
+      "email": "adummy2@email.de",
+      "password": "12345678",
+      "address": "address 12",
+      "city": "Dummytown",
+      "postCode": "12345"
+    }
+  ],
+  "topics": [
+    {
+      "id": "Betriebswirtschaftslehre",
+      "chapters": [
+        {
+          "chapterId": "business-environment",
+          "image": "assets/business-administration-images/cardOne.jpg",
+          "headline": "Lernfeld 1",
+          "pOne": "Der Betrieb und sein Umfeld",
+          "pTwo": "Wichtige Grundlagen des Wirtschaftens aus dem Bereich 'Wirtschaft und Soziales'."
+        },
+        {
+          "chapterId": "Business-Process",
+          "image": "assets/business-administration-images/umfeld.jpg",
+          "headline": "Lernfeld 2",
+          "pOne": "Geschäftsprozesse und betriebliche Organisation",
+          "pTwo": "Leistungs- und Geldinformationsflüsse analysieren sowie Geschäftsprozesse gestalten.",
+          "pThree": "Auch die Aufbauorganisation von Unternehmen sollen einer genaueren Betrachtung unterzogen werden."
+        },
+        {
+          "chapterId": "market-and-customer",
+          "image": "assets/business-administration-images/markt.jpg",
+          "headline": "Lernfeld 8",
+          "pOne": "Markt- und Kundenbeziehungen",
+          "pTwo": "Um den Leistungsprozess mit Erfolg abzuschließen, müssen eine gute Finanzierung der\nUnternehmen und Projekte gesichert, die wirtschaftlich günstige Beschaffung von Diensten\nund IT-Komponenten sichergestellt und eine gute Organisation der Protesse gewährleistet sein.",
+          "pThree": " Marktinstrumente werden einzeln vorgestellt und für die IT-Märkte aufbereitet."
+        },
+        {
+          "chapterId": "controlling",
+          "image": "assets/business-administration-images/rechnungswesen.jpg",
+          "headline": "Lernfeld 11",
+          "pOne": "Rechnungswesen und Controlling",
+          "pTwo": "Alle wichtigen Kontroll- und Steuerungsinstrumente sowie als Planungsgrundlagen des Betriebs.",
+          "pThree": "Verfahren der Kosten- und Leistungsrechnung werden keine Fremdwörter mehr sein."
+        }
+      ]
+    },
+    {
+      "id": "Allgemeiner Teil",
+      "chapters": [
+        {
+          "chapterId": "simplified-systems",
+          "image": "assets/common-part-images/einfacheSystemePNG.png",
+          "headline": "Lernfeld 4",
+          "pOne": "Einfache IT Systeme",
+          "pTwo": "Grundlegende Kenntnisse in Hardware, Software. Außerdem behinhaltet dieses Lernfeld eine\nÜbersicht der Betriebssysteme und die wichtigsten Geschäftsabläufe über Planung, Beschaffung,\nÜbergabe und den Betrieb der Computertechnik."
+        },
+        {
+          "chapterId": "cross-linked-systems",
+          "image": "assets/common-part-images/vernetztesysteme.jpg",
+          "headline": "Lernfeld 7",
+          "pOne": "Vernetzte Systeme",
+          "pTwo": "Die Rechner haben oft unterschiedliche technische Ausstattungen und übernehmen die verschiedensten\nFunktionen im Unternehmen.",
+          "pThree": "Die unterschiedlichen Verbindungsmedien und Kopplungsgeräte, die die Daten zwischen den\nRechnern transportieren, komlettieren das Netzwerk."
+        },
+        {
+          "chapterId": "public-network",
+          "image": "assets/common-part-images/oeffentlicheNetze.jpg",
+          "headline": "Lernfeld 9",
+          "pOne": "Öffentliche Netze",
+          "pTwo": "Moderne und klassische Kommunikationstechnologien, die Prinzipien der\nDatenübertragung in den öffentlichen Netzen sowie Dienste der Netzbetreiber wiederspiegeln."
+        },
+        {
+          "chapterId": "system-administration",
+          "image": "assets/common-part-images/betreuen.png",
+          "headline": "Lernfeld 10",
+          "pOne": "Betreuung von IT-Systemen",
+          "pTwo": "Im Rahmen der Kundenprojekte werden wichtige Details und Besonderheiten der Software-\nund Hardwarwartung vorgestellt."
+        }
+      ]
+    },
+    {
+      "id": "Systemintegration",
+      "chapters": [
+        {
+          "chapterId": "network-engineering",
+          "image": "assets/systemintegration-images/netzwerktechnikPNG.png",
+          "headline": "Systemintegration",
+          "pOne": "Netzwerktechnik",
+          "pTwo": "Als Netze oder Netzwerke werden Systeme bezeichnet, deren zugrundeliegende Struktur sich mathematisch als\nGraph modellieren lässt und die über Mechanismen zu ihrer Organisation verfügen. Hier im Schwerpunkt auf die\nIT."
+        },
+        {
+          "chapterId": "server",
+          "image": "assets/systemintegration-images/server.jpg",
+          "headline": "Systemintegration",
+          "pOne": "Server",
+          "pTwo": "Der Begriff Server (deutsch: Diener, Bediensteter, in weiterem Sinn auch Dienst) kann in der EDV sowohl\nfür eine Software als auch für eine Hardware stehen. In beiden Fällen dient der Server als zentrale\nSchaltstelle innerhalb eines Netzwerks."
+        },
+        {
+          "chapterId": "it-safety",
+          "image": "assets/systemintegration-images/safety.jpg",
+          "headline": "Systemintegration",
+          "pOne": "IT-Sicherheit",
+          "pTwo": "Als Informationssicherheit bezeichnet man Eigenschaften von informationsverarbeitenden und -lagernden Systemen,\ndie die Schutzziele Vertraulichkeit, Verfügbarkeit und Integrität sicherstellen."
+        },
+        {
+          "chapterId": "console",
+          "image": "assets/systemintegration-images/consolePNG.png",
+          "headline": "Systemintegration",
+          "pOne": "Konsolenbefehle",
+          "pTwo": "Bei der Befehlszeile (oft auch Konsole oder Terminal genannt) handelt es sich um ein textbasiertes Interface\ninnerhalb des Betriebssystems. ... Der standardmäßige Command-Line-Interpreter bei Windows heißt CMD."
+        }
+      ]
+    },
+    {
+      "id": "Anwendungsentwicklung",
+      "chapters": [
+        {
+          "chapterId": "software-production",
+          "image": "assets/development-part-images/Softwareproduction.jpg",
+          "headline": "Anwendungsentwicklung",
+          "pOne": "Produktion von Software",
+          "pTwo": "-Systematisches Herangehen und Systemverständnis",
+          "pThree": "-Entwicklung als Projekt organisieren",
+          "pFour": "-Projektmanagement",
+          "pFive": "Vorgehensmodelle"
+        },
+        {
+          "chapterId": "analysis",
+          "image": "assets/development-part-images/analysePNG.png",
+          "headline": "Anwendungsentwicklung",
+          "pOne": "Phasen der Softwareentwicklung",
+          "pTwo": "-XT-Design:Entwurf der Lösung-Erstellen von Modellen-Objektorientierter Entwurf",
+          "pThree": "-Organisation als Lastenheft und Pflichtenheft"
+        },
+        {
+          "chapterId": "tools",
+          "image": "assets/development-part-images/WerkzeugeSoftwareEntwicklung.jpg",
+          "headline": "Anwendungsentwicklung",
+          "pOne": "Werkzeuge zur Software",
+          "pTwo": "-PAP und Struktogramm",
+          "pThree": "-Objektorientierte Modellierung mit UML",
+          "pFour": "-Objektorientierte Analyse und Objektorientiertes Design",
+          "pFive": "-Übersetzer formaler Sprachen"
+        },
+        {
+          "chapterId": "java",
+          "image": "assets/development-part-images/javaPNG.png",
+          "headline": "Anwendungsentwicklung",
+          "pOne": "Java",
+          "pTwo": "-Operatoren und Statements",
+          "pThree": "-Methoden und Kapselung",
+          "pFour": "Core Java API",
+          "pFive": "Klassendesign",
+          "pSix": "-Exceptions"
+        },
+        {
+          "chapterId": "databases",
+          "image": "assets/development-part-images/databases.jpg",
+          "headline": "Anwendungsentwicklung",
+          "pOne": "Datenbanken",
+          "pTwo": "Externe Speicherung, Architektur und Datenbankmanagementsysteme.",
+          "pThree": "-Datenmodell, ER-Modell-Tabellen, Schlüssel, Referenzen",
+          "pFour": "-Normalformen"
+        },
+        {
+          "chapterId": "web",
+          "image": "assets/development-part-images/web.jpg",
+          "headline": "Anwendungsentwicklung",
+          "pOne": "Web-Anwendungen",
+          "pTwo": "Ausgangspunkt sind Kenntnisse zu Art der Kommunikation im Netz. DIe Kommunikation setzt Sprachen und Protokolle voraus.",
+          "pThree": "Anschließend kann die Entwicklung aktiver Komponenten für Client und Server besprochen werden"
+        },
+        {
+          "chapterId": "testing",
+          "image": "assets/development-part-images/testing.jpg",
+          "headline": "Anwendungsentwicklung",
+          "pOne": "Testing",
+          "pTwo": " Zielstellung und Überblick der",
+          "pThree": "Teststufen",
+          "pFour": "Durchführung der Tests",
+          "pFive": "Manuelle Testverfahren wie White-Box-Verfahren und Blackboxverfahren",
+          "pSix": "Grenzwertanalyse und Testsequenzermittlung",
+          "pSeven": "verschiedene Testszenarien und auch die Testdokumentation"
+        },
+        {
+          "chapterId": "software-documentation",
+          "image": "assets/development-part-images/softwaredocumentationp.png",
+          "headline": "Anwendungsentwicklung",
+          "pOne": "Softwaredokumentation",
+          "pTwo": " Auch die Ausführung zur Wartung von Softwarekomponenten unterstreichen die Bedeutung\nder Dokumentation für einen langfristigen erfolgreichen Betrieb des Produktes, den Software muss gewartet werden."
+        },
+        {
+          "chapterId": "routine-operations",
+          "image": "assets/development-part-images/routinebetrieb.png",
+          "headline": "Anwendungsentwicklung",
+          "pOne": "Routinebetrieb von IT-Systemen",
+          "pTwo": "-Informationsmanagement, Entwicklungsstufen im betrieblichen Informationsmanagement",
+          "pThree": "-Strategische, taktische und operative Aufgaben des Informationsmanagements",
+          "pFour": "Organisationsmanagement und Informationsinfrastrukturmanagment"
+        }
+      ]
+    }
+  ]
+}

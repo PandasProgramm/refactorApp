@@ -1,0 +1,9 @@
+<div class="mb-5">
+
+  <div @fade class="mt-5 mb-2" style="margin-left: 15rem" *ngIf="cards?.length!==0">
+    <app-learning-card class="mb-5" (selectedIdOutput)="selectedId=$event"
+                       [cardItemId]="selectedId"
+                       [card]="cards[selectedId]">
+    </app-learning-card>
+  </div>
+</div>

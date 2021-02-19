@@ -1,0 +1,30 @@
+.font-shadow{
+  text-shadow: 4px 3px  #000000;
+}
+h5 {
+  text-align: center;
+}
+button{
+  margin: 2rem 1rem 0 0;
+  font-family: Arial,sans-serif;
+}
+button:hover{
+  box-shadow: -3px 2px 25px 16px #000000;
+}
+.row{
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+.box{
+  height: 100px;
+  width: 200px;
+  margin: 0.2rem .5rem 0.2rem .5rem;
+  padding-top: 21px;
+  text-align: center;
+  background: linear-gradient(#436EEE,#87CEFA);
+  font-family: Arial,sans-serif;
+  text-shadow: 0 0 #000000;
+  border: 3px solid black;
+  cursor: pointer;
+}

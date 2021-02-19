@@ -1,0 +1,15 @@
+<div class=" div-container container-xs container-sm container-xl  container-xxl mb-3 mt-sm-3 mt-md-3 mt-lg-3 mt-xl-3 mt-xl-3">
+  <div>
+    <h2 class="fonts pt-3 mt-sm-5 mt-md-5" style="text-align: center">{{headline}}</h2>
+    <hr class="fonts" style="border-top: 2px solid white ">
+    <ul class="fonts">
+      <li><a class="isDisabled" [routerLink]="['summaries']">ZUSAMMENFASSUNGEN</a></li>
+      <li><a class="isDisabled" [routerLink]="['learning-cards']" [queryParams]="{'topicKey': topicKey}">LERNKARTEN</a></li>
+      <li><a class="isDisabled" [routerLink]="['quiz']">QUIZ</a></li>
+    </ul>
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+
+

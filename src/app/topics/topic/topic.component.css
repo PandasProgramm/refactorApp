@@ -1,0 +1,28 @@
+
+h5{
+  font-size: 18px;
+}
+
+.card{
+  font-family: Arial,sans-serif;
+  height: 97%;
+  background-color: #BDBDBD;
+}
+.card:hover{
+  box-shadow: -3px 2px 25px 8px orange;
+  cursor: pointer;
+}
+img{
+  height: 150px;
+  width: 100%;
+}
+#flex-container {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+

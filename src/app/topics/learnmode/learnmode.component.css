@@ -1,0 +1,73 @@
+.div-container{
+  background-image: url("src/assets/learnmode-images/board.jpg");
+  background-size: cover;
+  font-family: 'Fredericka the Great',sans-serif;
+  font-size: 22px;
+  color:white;
+  min-height: 60rem;
+}
+.div-container:hover{
+  box-shadow: -3px 2px 25px 16px #FF7F24;
+}
+h2{
+  text-align: center;
+}
+
+hr{
+  border-top: 2px solid white
+}
+ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+ul li{
+  list-style-type: none;
+  margin-right: 2rem;
+}
+ul li a{
+  font-size: 32px;
+}
+ul li:hover{
+  box-shadow: -3px 2px 25px 16px #000000;
+}
+.isDisabled{
+  color: currentColor;
+  text-decoration: azure;
+}
+
+@media only screen and (max-width: 500px){
+  h2{
+    font-size: 22px;
+  }
+  ul li{
+    margin-right: 1rem;
+  }
+  ul li a{
+    font-size: 14px;
+  }
+  .div-container{
+    min-height: 22rem;
+  }
+  .div-container:hover{
+  }
+}
+@media only screen and(width: 768px ) {
+
+  ul li {
+    font-size:22px;
+  }
+  .div-container:hover{
+
+  }
+}
+
+@media only screen and(min-width: 1024px ) {
+  ul li a{
+    font-size:44px;
+  }
+  .div-container:hover{
+    box-shadow: -3px 2px 25px 16px #FF7F24;
+  }
+}

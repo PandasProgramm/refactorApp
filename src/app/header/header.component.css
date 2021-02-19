@@ -1,0 +1,115 @@
+header{
+  position: fixed;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.background{
+  background-image: url(".idea/../src/assets/headerImg/stack-of-books-1001655_1920.jpg");
+  width: auto;
+  height: 10em;
+  background-size: cover;
+  background-position: 65%;
+  position: relative;
+}
+
+nav{
+  margin-top: 0;
+  width: 100%;
+  box-shadow: -7px 0 5px 7px #FF7F24;
+}
+button{
+  margin-right: auto;margin-left: auto; max-width: 100%;
+  color: #b0e2ff;
+  font-size: 18px;
+}
+button:hover{
+  box-shadow: -3px 2px 25px 8px orange;
+  color: orange;
+}
+@media only screen and (min-width: 300px){
+  .headline{
+    font-size: 12px;
+    margin-top: auto;
+    padding-top: 2em;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+    color: #b0e2ff;
+    text-shadow: 8px -8px 15px black;
+  }
+}
+@media only screen and (min-width: 375px) {
+  .headline{
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 480px){
+  .headline{
+    font-size: 12px;
+    margin-top: auto;
+    padding-top: 2em;
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+    color: #b0e2ff;
+    text-shadow: 8px -8px 15px black;
+  }
+}
+@media only screen and (max-width: 576px){
+  .headline{
+    font-size: 26px;
+  }
+}
+@media only screen and (max-width: 768px){
+  .headline{
+    font-size: 27px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .headline{
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 1200px){
+  .headline{
+    font-size: 32px;
+  }
+}
+@media only screen and (max-width: 1224px) {
+  .headline{
+    font-size: 28px;
+  }
+  .icon{
+    margin-top: -5%;
+    float: right;
+    image-rendering: high-quality;
+    max-width: 150px;
+    max-height: 150px;
+  }
+}
+@media only screen and (min-width: 1400px){
+
+  .headline{
+    font-size: 44px;
+  }
+  .icon{
+    margin-top: -4%;
+    float: right;
+    image-rendering: high-quality;
+    max-width: 150px;
+    max-height: 150px;
+  }
+  button{
+    height: auto;
+  }
+}
+
+
+
+
+
+

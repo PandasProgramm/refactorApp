@@ -1,0 +1,30 @@
+<div class="container-xs container-sm container-xl  container-xxl mb-3 mt-sm-3 mt-md-3 mt-lg-3 mt-xl-3 mt-xl-3">
+  <div>
+    <div class="row" *ngIf="chapters" >
+      <div  class="col-12 col-md-3 mb-3 flex-md-wrap flex-lg-wrap" *ngFor="let chapter of chapters">
+        <div class="card mt-3" (click)="onNavigate(chapter.chapterId)">
+         <img [src]="chapter.image" class="card-img-top" alt="...">
+          <div class="card-body">
+           <h5 class="card-title">{{chapter.headline}}</h5>
+           <p style="font-weight: bolder">
+              {{chapter.pOne}}
+           </p>
+           <p *ngIf="chapter.pTwo" class="card-text">
+             {{chapter.pTwo}}
+              <p *ngIf="chapter.pThree" class="card-text">
+              {{chapter?.pThree}}
+              <p *ngIf="chapter.pFour" class="card-text">
+              {{chapter?.pFour}}
+             <p *ngIf="chapter.pFive" class="card-text">
+             {{chapter?.pFive}}
+              <p *ngIf="chapter.pSix" class="card-text">
+             {{chapter?.pSix}}
+              <p *ngIf="chapter.pSeven" class="card-text">
+              {{chapter?.pSeven}}
+           </p>
+         </div>
+       </div>
+     </div>
+   </div>
+  </div>
+</div>

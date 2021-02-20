@@ -1,0 +1,39 @@
+<form class="register" [formGroup]="registerForm" (ngSubmit)="register(registerForm)">
+  <h2>Registrieren</h2>
+  <div class="mb-3">
+  <div class="form-group">
+    <label >Email:</label>
+    <input type="text" formControlName="email" class="form-control"/>
+    <span style="color: #ec4444" *ngIf="registerForm.controls?.email?.dirty">
+         <span style="color: #ec4444" *ngIf="registerForm.controls?.email?.errors?.required">
+            <strong>Required</strong>
+         </span>
+         <span *ngIf="!registerForm.controls?.email?.errors?.required && registerForm.controls?.email?.invalid">
+            <strong>Email is wrong format</strong>
+         </span>
+      </span>
+  </div>
+  <div class="form-group">
+    <label >Passwort:</label>
+    <input type="password" formControlName="password" class="form-control"  />
+    <span style="color: #ec4444" *ngIf="registerForm.controls?.password?.errors?.required && registerForm.controls?.password?.dirty">
+         <strong>Required</strong>
+      </span>
+  </div>
+  <div class="form-group">
+    <label >Passwort wiederholen:</label>
+    <input type="password" formControlName="passwordVerify" class="form-control" />
+    <span style="color: #ec4444" *ngIf="registerForm.controls?.passwordVerify?.dirty">
+         <span *ngIf="registerForm.controls?.passwordVerify?.errors?.required">
+            <strong>Required</strong>
+         </span>
+      <span *ngIf="registerForm.controls?.passwordVerify?.errors?.MatchPassword">
+            <strong>Paswörter stimmen nicht überein</strong>
+         </span>
+      </span>
+  </div>
+  <div class="form-group">
+    <button style="margin-top: 1rem" type="submit" [disabled]="registerForm.invalid" class="btn btn-primary btn-block">Register</button>
+  </div>
+  </div>
+</form>

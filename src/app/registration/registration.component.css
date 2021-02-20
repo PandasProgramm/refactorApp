@@ -1,0 +1,24 @@
+.register{
+  margin: 5% auto 5% auto;
+  width: 50%;
+  height: 30%;
+  background-color: #BDBDBD;
+  padding: 1rem 1rem 1rem 1rem;
+}
+.register:hover{
+  box-shadow: -3px 2px 25px 16px  #FF7F24;
+}
+button{
+  margin-right: 1rem;
+}
+button:hover{
+  box-shadow: -3px 2px 25px 16px  #000000;
+}
+input{
+  width: 70%;
+  margin: 1rem 1rem 1rem 1rem;
+}
+input:hover{
+  box-shadow: -3px 2px 25px 16px  #000000;
+}
+

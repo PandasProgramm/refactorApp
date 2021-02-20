@@ -1,0 +1,22 @@
+.login{
+  margin: 5% auto 5% auto;
+  width: 50%;
+  height: 30%;
+  background-color: #BDBDBD;
+  padding: 1rem 1rem 1rem 1rem;
+}
+.login:hover{
+  box-shadow: -3px 2px 25px 16px  #FF7F24;
+}
+button{
+  margin-right: 1rem;
+}
+button:hover{
+  box-shadow: -3px 2px 25px 16px  #000000;
+}
+input:hover{
+  box-shadow: -3px 2px 25px 16px  #000000;
+}
+.form-text{
+  color: red;
+}

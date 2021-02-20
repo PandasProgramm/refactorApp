@@ -1,0 +1,35 @@
+.addCardForm{
+  font-family: Arial,sans-serif;
+  border: 2px solid silver;
+
+  background: linear-gradient(#436EEE,#87CEFA);
+  padding: 1rem 3rem 1rem 3rem;
+}
+
+.label{
+  margin-top: 2rem;
+  font-size: 30px;
+  text-align: center;
+}
+select{
+  margin: 2rem 0 4rem 0;
+
+}
+select:hover{
+  box-shadow: -3px 2px 25px 16px #000000;
+}
+.form-check-label{
+  font-family: Arial,sans-serif;
+  text-shadow: none;
+}
+textarea{
+  font-size: 18px;
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  resize: none;
+}
+textarea:hover{
+  box-shadow: -3px 2px 25px 16px #000000;
+}

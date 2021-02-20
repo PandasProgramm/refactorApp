@@ -1,0 +1,38 @@
+<div style="width: 40%;text-align: center" >
+   <label class="label" for="topic" >Thema der Karte</label>
+   <div class="addCardForm">
+     <form [formGroup]="addCardForm">
+
+       <select class="form-select form-control " id="topic" name="topic" style="margin-bottom: 2%" formControlName="key">
+         <option>Der Betrieb und sein Umfeld</option>
+         <option>Geschäftsprozesse und betriebliche Organisation</option>
+         <option>Markt und Kundenbeziehungen</option>
+         <option>Rechnungswesen und Controlling</option>
+         <option>Einfache IT-Systeme</option>
+         <option>Vernetzte Systeme</option>
+         <option>Öffentliche Netze</option>
+         <option>Betreuung von IT-Systemen</option>
+         <option>Netzwerktechnik</option>
+         <option>Server</option>
+         <option>IT-Sicherheit</option>
+         <option>Konsolenbefehle</option>
+         <option>Produktion von Software</option>
+         <option>Phasen der Softwareentwicklung</option>
+         <option>Werkzeuge zur Software</option>
+         <option>Java</option>
+         <option>Datenbanken</option>
+         <option>Web-Anwendungen</option>
+         <option>Testing</option>
+         <option>Softwaredokumentation</option>
+       </select>
+       <textarea  placeholder="Frage" formControlName="question"></textarea>
+       <textarea  placeholder="Antwort" formControlName="answer"></textarea>
+       <div class="mb-3 form-check">
+         <input type="checkbox" class="form-check-input" id="exampleCheck1">
+         <label class="form-check-label" for="exampleCheck1" formControlName="checkbox">private Lernkarte</label>
+       </div>
+       <button [disabled]="!addCardForm.valid" type="submit" class="btn btn-secondary" (click)="onSave()" style="margin-top: 1rem">hinzufügen</button>
+     </form>
+   </div>
+</div>
+

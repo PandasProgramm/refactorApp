@@ -1,8 +1,11 @@
-import {Component, EventEmitter, OnInit, Output} from '@angular/core';
+import {Component, OnInit,} from '@angular/core';
 import {ActivatedRoute, Router} from '@angular/router';
-import {Subscription} from 'rxjs';
+import {BehaviorSubject, combineLatest, Observable} from 'rxjs';
+import {map, switchMap} from 'rxjs/operators';
+
 import {SelectTopicService} from '../../topics/services/select-topic.service';
 import {LearningCard} from '../../models/card-box/LearningCard';
+
 
 @Component({
   selector: 'app-card-list',
@@ -11,40 +14,81 @@ import {LearningCard} from '../../models/card-box/LearningCard';
 })
 export class CardListComponent implements OnInit {
 
-  index:number
-  topicKey:string;
-  $subscription:Subscription
-  selectInfo:boolean=false
-  learningCards:LearningCard[]=[];
-  selectedList:LearningCard[];
 
-  @Output()learningSelectedList= new EventEmitter<LearningCard[]>();
+  topicKey$:Observable<string>;
+  learningCards$:Observable<any>;
+  elementToShow$:BehaviorSubject<number>= new BehaviorSubject<number>(0);
+  activeCard$:Observable<any>;
 
+  selectInfo:boolean=false;
+  isActivate:boolean=false
   constructor(
     private activatedRoute:ActivatedRoute,
     private router:Router,
     private topicService:SelectTopicService) { }
 
+
+  getAllCards=()=>  this.topicKey$.pipe(switchMap(key=>this.topicService.getAllCardsFromHttp(key)));
+
+  /**
+   * switchmap: Projects each source value to an Observable which is merged in the output Observable,
+   *            emitting values only from the most recently projected Observable.
+   */
   ngOnInit(): void {
-    this.$subscription = this.activatedRoute.queryParams.subscribe(key => {
-      this.topicKey = key["topicKey"];
-      this.topicService.getAllCardsFromHttp(this.topicKey).subscribe(cards=>{
-       this.learningCards=cards["cards"]
-      });
-    });
+   this.topicKey$= this.activatedRoute.queryParams.pipe(map(key=>key.topicKey));
   }
-  setLvl(select: number) {
-    this.selectedList= this.filterByCorrectAnswerCount(select)
-  }
-  filterByCorrectAnswerCount(select:number){
-    const selectedList:LearningCard[]=[];
-    select===1&&this.learningCards?.filter(card=>card.correctAnswerCount<=3&&selectedList.push(card));
-    select===2&&this.learningCards?.filter(card=>card.correctAnswerCount>3&&card.correctAnswerCount<=6&&selectedList.push(card));
-    select===3&&this.learningCards?.filter(card=>card.correctAnswerCount>6&&card.correctAnswerCount<=9&&selectedList.push(card));
-    select===4&&this.learningCards?.filter(card=>card.correctAnswerCount>9&&card.correctAnswerCount<=12&&selectedList.push(card));
-    select===5&&this.learningCards?.filter(card=>card.correctAnswerCount>12&&selectedList.push(card));
-    alert("g")
-    return selectedList
+
+  /**
+   * @param selected lvl to filter card list
+   */
+
+  setLvl(selected: number) {
+    this.learningCards$= this.filterByCorrectAnswerCount(selected);
 
   }
+
+  /**
+   * combineLatest from Rxjs: Pass arguments in a single array instead combineLatest([a, b, c]) and returns an Observable
+   */
+    next(card:LearningCard){
+
+    this.activeCard$= combineLatest([this.learningCards$,this.elementToShow$]).pipe(
+      map(([allCards,behaviorSubject])=> {
+        allCards[++behaviorSubject];
+      })
+    )
+  }
+  /**
+   * @param select lvl for filtering cards
+   */
+  filterByCorrectAnswerCount(select:number){
+    this.learningCards$=this.getAllCards()
+    if(select===1){
+      return this.learningCards$.pipe(
+        map(cards=>cards["cards"]
+          .filter((card:LearningCard)=>card.correctAnswerCount<=3)));
+    }
+    if(select===2){
+      return this.learningCards$.pipe(
+        map(cards=>cards["cards"]
+        .filter((card:LearningCard)=>card.correctAnswerCount>3&&card.correctAnswerCount<=6)));
+    }
+    if(select===3){
+      return this.learningCards$.pipe(
+        map(cards=>cards["cards"]
+        .filter((card:LearningCard)=>card.correctAnswerCount>6&&card.correctAnswerCount<=9)));
+    }
+    if(select===4){
+      return this.learningCards$.pipe(
+        map(cards=>cards["cards"]
+        .filter((card:LearningCard)=>card.correctAnswerCount>9&&card.correctAnswerCount<=12)));
+    }
+    if(select===5){
+        return this.learningCards$.pipe(
+          map(cards=>cards["cards"]
+            .filter((card:LearningCard)=>card.correctAnswerCount>12)));
+    }
+  }
+
+
 }

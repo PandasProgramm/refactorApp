@@ -7,5 +7,6 @@ export interface LearningCard {
   question:string,
   answer:string,
 
+  userId?:string,
   correctAnswerCount:number
 }

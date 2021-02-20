@@ -6,8 +6,12 @@
     </h5>
   </div>
   <div>
-    <button class="btn btn-primary" (click)="selectInfo=!selectInfo">Erklärung</button>
-    <button class="btn btn-primary" >neue Karte</button>
+    <button class="btn btn-primary select-button" (click)="selectInfo=!selectInfo">Erklärung</button>
+    <button class="btn btn-primary select-button" (click)="isActivate=true">neue Karte</button>
+  </div>
+  <div>
+  <div *ngIf="isActivate" class="label">
+    <app-add-card (isActive)="isActivate=$event"></app-add-card>
   </div>
   <div *ngIf="selectInfo" style="margin-top: 2rem">
    Die Lernkartenstruktur ist so aufgebaut, dass du 5 verschiedene Level hast.
@@ -32,13 +36,11 @@
       <div class="box" (click)="setLvl(4)">Level 4</div>
       <div class="box" (click)="setLvl(5)">Level 5</div>
   </div>
-  <div *ngIf="selectedList">
-    <div *ngFor="let item of selectedList">
-      <div style="height: 100px;width: 100px;background-color: red">nächste Karte</div>
-      <app-learning-card [card]="item">
-
-
-      </app-learning-card>
+  <div *ngIf="learningCards$|async as cards">
+    <div *ngFor="let item of learningCards$|async">
+      <div style="height: 100px;width: 100px;background-color: red" (click)="next(item)">nächste Karte</div>
+      <app-learning-card [card]="item"></app-learning-card>
     </div>
   </div>
+</div>
 </div>

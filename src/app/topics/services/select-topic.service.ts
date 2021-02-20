@@ -2,6 +2,8 @@ import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Topic} from '../../models/topic/TopicTemplate';
 import {LearningCard} from '../../models/card-box/LearningCard';
+import {catchError, filter, map, retry} from 'rxjs/operators';
+import {User} from '../../models/users/User';
 
 @Injectable({
   providedIn: 'root'
@@ -19,15 +21,29 @@ export class SelectTopicService {
     return this.httpClient.get<Topic[]>(`${this.ROOT_URL_TOPICS}/${id}`);
   }
   getAllCardsFromHttp(topic:string){
-    return this.httpClient.get<LearningCard[]>(`${this.ROOT_URL_CARDS}/${topic}`);
+    return this.httpClient.get<LearningCard[]>(`${this.ROOT_URL_CARDS}/${topic}`)
+      .pipe(
+        retry(3),
+        catchError(()=>"Verbindung fehlgeschlagen")
+      );
   }
   editCard(topic:string,card:LearningCard){
-    return this.httpClient.put<LearningCard>(`${this.ROOT_URL_CARDS}/${topic}`[1],card);
+    return this.httpClient.patch(`${this.ROOT_URL_CARDS}/${topic}`, card)
   }
   addCard(topic:string,card:LearningCard){
-    return this.httpClient.post<LearningCard>(`${this.ROOT_URL_CARDS}/${topic}`,card);
+    return this.httpClient.post<LearningCard>(`${this.ROOT_URL_CARDS}/${topic}/cards.json`,card);
   }
   removeCard(topic:string,id:number){
     return this.httpClient.delete<LearningCard>(`${this.ROOT_URL_CARDS}/${topic}/${id}`)
+  }
+
+
+  addUser(user:User){
+   user.id="3"
+
+   return  this.httpClient.post(`${this.ROOT_URL_USERS}`,user);
+  }
+  getUser(id){
+    return this.httpClient.get(`${this.ROOT_URL_USERS}/${id}`)
   }
 }

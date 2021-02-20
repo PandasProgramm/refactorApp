@@ -19,7 +19,7 @@ export class TopicComponent implements OnInit {
       this.CURRENT_URL=this.router.url
   }
   onNavigate(chapterId:string){
-    this.router.navigate([`${this.CURRENT_URL}//learnmode`],{queryParams:{'topicKey':chapterId}})
+    this.router.navigate([`${this.CURRENT_URL}/learnmode`],{queryParams:{'topicKey':chapterId}})
   }
 
 }

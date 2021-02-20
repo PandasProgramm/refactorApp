@@ -7,12 +7,12 @@ import { LearnmodeComponent } from './learnmode/learnmode.component';
 
 
 
-
 @NgModule({
-  declarations: [ SelectTopicComponent, TopicComponent, LearnmodeComponent],
-  imports: [
-    CommonModule,
-    topicRoutes,
-  ]
+    declarations: [SelectTopicComponent, TopicComponent, LearnmodeComponent],
+
+    imports: [
+        CommonModule,
+        topicRoutes,
+    ]
 })
 export class TopicsModule { }

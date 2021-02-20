@@ -1,9 +1,10 @@
 import {Component, DoCheck, OnChanges, OnDestroy, OnInit, SimpleChanges} from '@angular/core';
-import {Observable, Subscription} from 'rxjs';
+import {BehaviorSubject, Observable, Subscription} from 'rxjs';
 import {SelectTopicService} from '../services/select-topic.service';
 import {Topic} from '../../models/topic/TopicTemplate';
 import {ActivatedRoute, Router} from '@angular/router';
 import {Chapter} from '../../models/topic/Chapter';
+import {filter, map, switchMap} from 'rxjs/operators';
 
 @Component({
   selector: 'app-select-topic',
@@ -16,6 +17,7 @@ export class SelectTopicComponent implements OnInit,OnDestroy {
 
   topicKey:string;
   chapters:Chapter[];
+
 
   constructor(
     private activatedRoute: ActivatedRoute,

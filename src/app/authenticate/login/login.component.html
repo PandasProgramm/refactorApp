@@ -10,6 +10,6 @@
     <input type="password" class="form-control" id="exampleInputPassword1" formControlName="password">
     <div  class="form-text" *ngIf="!loginForm.valid">Ich brauche auch ein Password</div>
   </div>
-  <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid">Login</button>
-  <button type="submit" class="btn btn-primary" >registrieren</button>
+  <button type="submit" class="btn btn-primary" [disabled]="!loginForm.valid" [routerLink]="['topics']">Login</button>
+  <button type="submit" class="btn btn-primary" [routerLink]="['register']" >registrieren</button>
 </form>

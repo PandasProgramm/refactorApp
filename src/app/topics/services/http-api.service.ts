@@ -1,8 +1,8 @@
-import { Injectable } from '@angular/core';
+import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Topic} from '../../models/topic/TopicTemplate';
 import {LearningCard} from '../../models/card-box/LearningCard';
-import {catchError, filter, map, retry} from 'rxjs/operators';
+import {catchError, map, retry} from 'rxjs/operators';
 import {User} from '../../models/users/User';
 
 @Injectable({
@@ -14,6 +14,7 @@ export class HttpApiService {
   private ROOT_URL_CARDS= "http://localhost:3000/chapters";
   private ROOT_URL_USERS="http://localhost:3000/users"
 
+  user:User;
 
   constructor(private httpClient:HttpClient) { }
 
@@ -28,7 +29,8 @@ export class HttpApiService {
       );
   }
   editCard(topic:string,card:LearningCard){
-    return this.httpClient.patch(`${this.ROOT_URL_CARDS}/${topic}`, card)
+    return this.httpClient.get(`${this.ROOT_URL_CARDS}/${topic}`).pipe(
+      map(object => object["cards"])).pipe(map(cards => cards))
   }
   addCard(topic:string,card:LearningCard){
     return this.httpClient.post<LearningCard>(`${this.ROOT_URL_CARDS}/${topic}/cards.json`,card);
@@ -41,9 +43,12 @@ export class HttpApiService {
   addUser(user:User){
    user.id="3"
 
-   return  this.httpClient.post(`${this.ROOT_URL_USERS}`,user);
+   return  this.httpClient.post<User>(`${this.ROOT_URL_USERS}`,user);
   }
   getUser(id){
-    return this.httpClient.get(`${this.ROOT_URL_USERS}/${id}`)
+    return this.httpClient.get<User>(`${this.ROOT_URL_USERS}/${id}`)
+  }
+  isAuthenticated(){
+    return true
   }
 }

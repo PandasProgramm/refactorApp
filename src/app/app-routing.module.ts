@@ -11,6 +11,10 @@ const routes: Routes = [
     pathMatch:'full'
   },
   {
+    path:'authenticate',
+    loadChildren:()=>import('./authenticate/authenticate.module').then(module=>module.AuthenticateModule),
+  },
+  {
     path:'review',
     component:ReviewComponent
   },

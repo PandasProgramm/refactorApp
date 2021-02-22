@@ -30,7 +30,7 @@ export class LearningCardComponent implements OnInit,OnDestroy {
   }
   onSuccess(event:Event) {
     ++this.card.correctAnswerCount;
-   //this.httpService.editCard(this.card.key).subscribe(data=> console.log(data),error => console.log("data"))
+    this.httpService.editCard(this.card.key,this.card).subscribe(data=> console.log("subscribe:",data),error => console.log("data"))
   }
   onFail(event:Event){
     --this.card.correctAnswerCount;

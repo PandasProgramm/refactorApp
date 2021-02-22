@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {AbstractControl, FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
-import {HttpApiService} from '../topics/services/http-api.service';
-import {User} from '../models/users/User';
+import {AbstractControl, FormBuilder,  FormGroup, Validators} from '@angular/forms';
+import {HttpApiService} from '../../topics/services/http-api.service';
+import {User} from '../../models/users/User';
 
 @Component({
   selector: 'app-registration',

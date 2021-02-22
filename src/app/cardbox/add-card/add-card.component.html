@@ -29,9 +29,9 @@
        <textarea  placeholder="Antwort" formControlName="answer"></textarea>
        <div class="mb-3 form-check">
          <input type="checkbox" class="form-check-input" id="exampleCheck1">
-         <label class="form-check-label" for="exampleCheck1" formControlName="checkbox">private Lernkarte</label>
+         <label class="form-check-label" for="exampleCheck1" formControlName="checkbox" #e>private Lernkarte</label>
        </div>
-       <button [disabled]="!addCardForm.valid" type="submit" class="btn btn-secondary" (click)="onSave()" style="margin-top: 1rem">hinzufügen</button>
+       <button [disabled]="!addCardForm.valid" type="submit" class="btn btn-secondary" (click)="onSave(e)" style="margin-top: 1rem">hinzufügen</button>
      </form>
    </div>
 </div>

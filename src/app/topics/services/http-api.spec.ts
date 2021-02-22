@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { SelectTopicService } from './select-topic.service';
+import { HttpApiService } from './http-api.service';
 
 describe('SelectTopicService', () => {
-  let service: SelectTopicService;
+  let service: HttpApiService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(SelectTopicService);
+    service = TestBed.inject(HttpApiService);
   });
 
   it('should be created', () => {

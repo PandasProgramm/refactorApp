@@ -1,2 +1,8 @@
+
+<h2>{{topicObs$|async|uppercase}}</h2>
+
+<app-topic [chapters]="chaptersObs$|async"></app-topic>
+
+<!--ANTIPATTERN
 <h2>{{topicKey|uppercase}}</h2>
-<app-topic [chapters]="chapters"></app-topic>
+<app-topic [chapters]="chapters"></app-topic>-->

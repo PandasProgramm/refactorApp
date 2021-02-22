@@ -1,7 +1,7 @@
-import {Component, OnInit, Output, EventEmitter, OnDestroy} from '@angular/core';
+import {Component, OnInit, Output, EventEmitter, OnDestroy, OnChanges, SimpleChanges} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {LearningCard} from '../../models/card-box/LearningCard';
-import {SelectTopicService} from '../../topics/services/select-topic.service';
+import {HttpApiService} from '../../topics/services/http-api.service';
 import {Subscription} from 'rxjs';
 
 
@@ -12,8 +12,9 @@ import {Subscription} from 'rxjs';
 })
 export class AddCardComponent implements OnInit, OnDestroy {
 
-  constructor(private httpService:SelectTopicService) {
+  constructor(private httpService: HttpApiService) {
   }
+
   @Output()isActive= new EventEmitter<boolean>();
   subscription:Subscription;
 
@@ -21,15 +22,21 @@ export class AddCardComponent implements OnInit, OnDestroy {
     key: new FormControl(null,[Validators.required]),
     question: new FormControl(null,[Validators.required,Validators.minLength(10)]),
     answer: new FormControl(null,[Validators.required,Validators.minLength(10)]),
-    checkbox:new FormControl(null),
+    checkbox:new FormControl(false),
   })
 
   ngOnInit(): void {
   }
-  onSave(){
+  onSave(event){
     //TODO:http
-    const card:LearningCard= this.addCardForm.value
-    alert(card.id+" "+card.question)
+    let card:LearningCard= this.addCardForm.value
+    if(event){
+      card.userId="all"
+    }
+    else{
+
+    }
+    alert(card.userId+" "+card.question)
     this.isActive.emit(false);
   }
 

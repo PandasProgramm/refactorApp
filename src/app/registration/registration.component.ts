@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {AbstractControl, FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
-import {SelectTopicService} from '../topics/services/select-topic.service';
+import {HttpApiService} from '../topics/services/http-api.service';
 import {User} from '../models/users/User';
 
 @Component({
@@ -12,14 +12,14 @@ export class RegistrationComponent implements OnInit {
 
 
   registerForm: FormGroup;
-  constructor(public fb: FormBuilder, private http: SelectTopicService) {
+constructor(public fb: FormBuilder, private httpApiService: HttpApiService) {
     this.createRegisterForm();
   }
   ngOnInit() {}
   register(rf: FormGroup) {
    const user:User= rf.value;
    alert(user.email)
-    this.http.addUser(user).subscribe(data=>console.log(data),error => console.log("data nooott"))
+    this.httpApiService.addUser(user).subscribe(data=>console.log(data),error => console.log("data nooott"))
 
   }
   createRegisterForm() {

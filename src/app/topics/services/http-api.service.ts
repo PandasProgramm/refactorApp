@@ -8,7 +8,7 @@ import {User} from '../../models/users/User';
 @Injectable({
   providedIn: 'root'
 })
-export class SelectTopicService {
+export class HttpApiService {
 
   private ROOT_URL_TOPICS= " http://localhost:3000/topics";
   private ROOT_URL_CARDS= "http://localhost:3000/chapters";

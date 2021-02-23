@@ -1,4 +1,4 @@
-import {Component, OnInit, Output, EventEmitter, OnDestroy, OnChanges, SimpleChanges} from '@angular/core';
+import {Component, OnInit, Output, EventEmitter, OnDestroy, OnChanges, SimpleChanges, Input} from '@angular/core';
 import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {LearningCard} from '../../models/card-box/LearningCard';
 import {HttpApiService} from '../../topics/services/http-api.service';
@@ -13,11 +13,12 @@ import {User} from '../../models/users/User';
 })
 export class AddCardComponent implements OnInit, OnDestroy {
 
-  constructor(private httpService: HttpApiService,private userId:string) {
+  constructor(private httpService: HttpApiService) {
   }
 
   @Output()isActive= new EventEmitter<boolean>();
   subscription:Subscription;
+  @Input() userId:string
 
   addCardForm= new FormGroup({
     id: new FormControl(null, [Validators.required]),

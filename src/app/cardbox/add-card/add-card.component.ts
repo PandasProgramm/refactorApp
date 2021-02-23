@@ -3,6 +3,7 @@ import {FormControl, FormGroup, Validators} from '@angular/forms';
 import {LearningCard} from '../../models/card-box/LearningCard';
 import {HttpApiService} from '../../topics/services/http-api.service';
 import {Subscription} from 'rxjs';
+import {User} from '../../models/users/User';
 
 
 @Component({
@@ -12,19 +13,19 @@ import {Subscription} from 'rxjs';
 })
 export class AddCardComponent implements OnInit, OnDestroy {
 
-  constructor(private httpService: HttpApiService) {
+  constructor(private httpService: HttpApiService,private userId:string) {
   }
 
   @Output()isActive= new EventEmitter<boolean>();
   subscription:Subscription;
 
   addCardForm= new FormGroup({
+    id: new FormControl(null, [Validators.required]),
     key: new FormControl(null,[Validators.required]),
     question: new FormControl(null,[Validators.required,Validators.minLength(10)]),
     answer: new FormControl(null,[Validators.required,Validators.minLength(10)]),
     checkbox:new FormControl(false),
   })
-
   ngOnInit(): void {
   }
   onSave(event){
@@ -34,7 +35,7 @@ export class AddCardComponent implements OnInit, OnDestroy {
       card.userId="all"
     }
     else{
-
+      card.userId= this.userId;
     }
     alert(card.userId+" "+card.question)
     this.isActive.emit(false);

@@ -24,6 +24,7 @@ constructor(public fb: FormBuilder, private httpApiService: HttpApiService) {
   }
   createRegisterForm() {
     this.registerForm = this.fb.group({
+        id : ['',[Validators.required]],
         email: ['', [Validators.required, Validators.email]],
         password: ['', [Validators.required]],
         passwordVerify: ['', [Validators.required]]

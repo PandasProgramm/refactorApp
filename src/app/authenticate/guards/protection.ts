@@ -1,8 +1,9 @@
 import {ActivatedRouteSnapshot, CanActivate, Router, RouterStateSnapshot, UrlTree} from '@angular/router';
 import {Observable} from 'rxjs';
 import {HttpApiService} from '../../topics/services/http-api.service';
+import {Injectable} from '@angular/core';
 
-
+@Injectable({providedIn:'root'})
 export class Protection_Guard implements CanActivate{
 
   //TODO: backend

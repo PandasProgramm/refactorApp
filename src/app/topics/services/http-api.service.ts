@@ -2,8 +2,9 @@ import {Injectable} from '@angular/core';
 import {HttpClient} from '@angular/common/http';
 import {Topic} from '../../models/topic/TopicTemplate';
 import {LearningCard} from '../../models/card-box/LearningCard';
-import {catchError, map, retry} from 'rxjs/operators';
+import {catchError, map, mergeAll, retry} from 'rxjs/operators';
 import {User} from '../../models/users/User';
+import {createAttribute} from '@angular/compiler/src/core';
 
 @Injectable({
   providedIn: 'root'
@@ -29,8 +30,9 @@ export class HttpApiService {
       );
   }
   editCard(topic:string,card:LearningCard){
-    return this.httpClient.get(`${this.ROOT_URL_CARDS}/${topic}`).pipe(
-      map(object => object["cards"])).pipe(map(cards => cards))
+    return this.httpClient.put(`${this.ROOT_URL_CARDS}/${topic}`,card).pipe(
+      map(object => object["cards"])).pipe(
+        map(cards => cards[card]))
   }
   addCard(topic:string,card:LearningCard){
     return this.httpClient.post<LearningCard>(`${this.ROOT_URL_CARDS}/${topic}/cards.json`,card);
@@ -41,7 +43,6 @@ export class HttpApiService {
 
 
   addUser(user:User){
-   user.id="3"
 
    return  this.httpClient.post<User>(`${this.ROOT_URL_USERS}`,user);
   }

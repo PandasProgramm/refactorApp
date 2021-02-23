@@ -15,15 +15,14 @@ const routes :Routes=[
   {
     path:'login',
     component: LoginComponent,
-
   },
   {
     path:'register',
     component:RegistrationComponent
   },
   {
-    path:':topics',
-    loadChildren: ()=>import('../topics/topics.module').then(module => module.TopicsModule),
+    path:'topics',
+    loadChildren: ()=> import('../topics/topics.module').then(module => module.TopicsModule),
     canActivate:[Protection_Guard]
   },
   {

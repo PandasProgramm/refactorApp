@@ -12,7 +12,7 @@ const routes: Routes = [
   },
   {
     path:'authenticate',
-    loadChildren:()=>import('./authenticate/authenticate.module').then(module=>module.AuthenticateModule),
+    loadChildren:()=>import('./authenticate/authenticate.module').then(module => module.AuthenticateModule),
   },
   {
     path:'review',

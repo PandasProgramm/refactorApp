@@ -18,10 +18,10 @@ export class LearningCardComponent implements OnInit,OnDestroy {
   @Output()selectedIdOutput= new EventEmitter<number>();
 
   selectedId:number=0;
-  showAnswer: boolean=false;
+  @Input()showAnswer: boolean=false;
   subscription:Subscription
 
-  constructor(private httpService:HttpApiService, private router:Router) { }
+  constructor(private httpService:HttpApiService, private router:Router) {}
 
   ngOnInit(): void {}
 

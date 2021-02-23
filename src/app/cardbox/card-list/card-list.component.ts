@@ -24,6 +24,9 @@ export class CardListComponent implements OnInit, OnDestroy {
   selectInfo:boolean=false;
   isActivate:boolean=false
   card:LearningCard;
+  showAnswer:boolean;
+  show:boolean=true;
+
 
   constructor(
     private activatedRoute:ActivatedRoute,
@@ -32,7 +35,7 @@ export class CardListComponent implements OnInit, OnDestroy {
   ) { }
 
 
-  getAllCards=()=>  this.topicKey$.pipe(switchMap(key=>this.topicService.getAllCardsFromHttp(key)));
+  getAllCards= ()=>  this.topicKey$.pipe(switchMap(key=>this.topicService.getAllCardsFromHttp(key)));
 
   /**
    * switchmap: Projects each source value to an Observable which is merged in the output Observable,
@@ -48,12 +51,18 @@ export class CardListComponent implements OnInit, OnDestroy {
    */
 
   setLvl(selected: number) {
+    this.show=true
+    this.elementToShow$.next(0);
     this.learningCards$= this.filterByCorrectAnswerCount(selected);
     this.activeCard$ = combineLatest([this.learningCards$, this.elementToShow$]).pipe(
       map(([allCards, elementToShow]) => {
-        allCards.length<=this.elementToShow$.value&&this.elementToShow$.next(0);
+        if(allCards.length<=this.elementToShow$.value) {
+          this.elementToShow$.next(0);
+          return
+        }
         return allCards[elementToShow];
-      }),takeUntil(this.destroyBigMac$)
+      }),
+      takeUntil(this.destroyBigMac$)
     );
   }
 
@@ -62,14 +71,25 @@ export class CardListComponent implements OnInit, OnDestroy {
    */
 
   nextElementOnClick(event:Event,cards:LearningCard[]){
-    cards.length <= this.elementToShow$.value&&this.elementToShow$.next(0);
+    alert(cards.length+" "+ this.elementToShow$.value)
+    if( cards.length-1 <= this.elementToShow$.value){
+      this.show=false;
+      this.elementToShow$.next(0)
+    }
     let value: number = this.elementToShow$.value;
-    this.elementToShow$.next(++value)
+    if(cards.length-1<=this.elementToShow$.value) {
+      this.show= false;
+    }
+    else{
+      this.elementToShow$.next(++value);
+    }
+
   }
   beforeElementOnClick(event:Event,cards:LearningCard[]){
     cards.length <= this.elementToShow$.value&&this.elementToShow$.next(0);
     let value: number = this.elementToShow$.value;
-    this.elementToShow$.next(--value)
+    this.elementToShow$.next(--value);
+    alert(this.elementToShow$.value)
   }
 
   /**
@@ -81,31 +101,32 @@ export class CardListComponent implements OnInit, OnDestroy {
     if(select===1){
       return this.learningCards$.pipe(
         map(cards=>cards["cards"]
-          .filter((card:LearningCard)=>card.correctAnswerCount<=3)));
+          .filter((card:LearningCard)=>card.correctAnswerCount<=3)),takeUntil(this.destroyBigMac$));
     }
     if(select===2){
       return this.learningCards$.pipe(
         map(cards=>cards["cards"]
-        .filter((card:LearningCard)=>card.correctAnswerCount>3&&card.correctAnswerCount<=6)));
+        .filter((card:LearningCard)=>card.correctAnswerCount>3&&card.correctAnswerCount<=6)),takeUntil(this.destroyBigMac$));
     }
     if(select===3){
       return this.learningCards$.pipe(
         map(cards=>cards["cards"]
-        .filter((card:LearningCard)=>card.correctAnswerCount>6&&card.correctAnswerCount<=9)));
+        .filter((card:LearningCard)=>card.correctAnswerCount>6&&card.correctAnswerCount<=9)),takeUntil(this.destroyBigMac$));
     }
     if(select===4){
       return this.learningCards$.pipe(
         map(cards=>cards["cards"]
-        .filter((card:LearningCard)=>card.correctAnswerCount>9&&card.correctAnswerCount<=12)));
+        .filter((card:LearningCard)=>card.correctAnswerCount>9&&card.correctAnswerCount<=12)),takeUntil(this.destroyBigMac$));
     }
     if(select===5){
         return this.learningCards$.pipe(
           map(cards=>cards["cards"]
-            .filter((card:LearningCard)=>card.correctAnswerCount>12)));
+            .filter((card:LearningCard)=>card.correctAnswerCount>12)),takeUntil(this.destroyBigMac$));
     }
   }
   ngOnDestroy() {
-    this.destroyBigMac$.next()
+    this.destroyBigMac$.next();
+   // this.elementToShow$&&this.elementToShow$.unsubscribe()
   }
 
 }
